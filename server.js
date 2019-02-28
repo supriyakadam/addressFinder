@@ -25,8 +25,6 @@ app.use(function (req, res, next) {
 });
 var zipFinderRouter = require('./backend/routers/zipFinderRouter.js');
 app.use('/zipFinder', zipFinderRouter);
-
 var addressFinderRouter = require('./backend/routers/addressFinderRouter.js');
 app.use('/addressFinder', addressFinderRouter);
-console.log("#########333");
 app.listen(3000);
