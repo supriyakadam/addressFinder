@@ -1,0 +1,16 @@
+<h3>Find Zip Code</h3>
+<form name="findZipForm">
+    <select ng-required="true" ng-change="loadStates(form.countrySelected)" ng-options="country._id for country in countries" ng-model="form.countrySelected">
+        <option value="">--Select Country--</option>
+    </select>
+
+    <select ng-required="true" ng-change="loadCities(form.stateSelected)" ng-options="state._id for state in states" ng-model="form.stateSelected">
+        <option value="">--Select State--</option>
+    </select>
+
+    <select ng-required="true" ng-options="city.city for city in cities" ng-model="form.citySelected">
+        <option value="">--Select City--</option>
+    </select>
+    <button ng-disabled="findZipForm.$invalid" class="btn btn-primary" ng-click="getZipCode(form)">Find Address</button>
+    <div>{{zip}}</div>
+</form>
