@@ -23,6 +23,8 @@ app.use(function (req, res, next) {
     };
     next();
 });
+//uncomment incase of this error: HttpError: unable to get local issuer certificate
+//process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0 
 var zipFinderRouter = require('./backend/routers/zipFinderRouter.js');
 app.use('/zipFinder', zipFinderRouter);
 var addressFinderRouter = require('./backend/routers/addressFinderRouter.js');
