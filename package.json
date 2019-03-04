@@ -1,0 +1,28 @@
+{
+  "name": "addressfinder",
+  "version": "1.0.0",
+  "description": "install node.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supriyakadam/addressFinder.git"
+  },
+  "author": "Supriya Kadam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/supriyakadam/addressFinder/issues"
+  },
+  "homepage": "https://github.com/supriyakadam/addressFinder#readme",
+  "dependencies": {
+    "angular-toastr": "^2.1.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.17",
+    "node-geocoder": "^3.22.0",
+    "nodemon": "^1.18.10"
+  }
+}
